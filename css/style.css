@@ -3,12 +3,25 @@ html body
     padding: 0;
     margin: 0;
 }
+nav
+{
+    text-align: center;
+}
 nav > ul > li
 {
     list-style-type: none;
     display: inline-block;
     padding-right: 3rem;
     font-size: x-large;
+}
+nav > ul > li:first-child
+{
+    display: flex;
+    position: absolute;
+    left: .5rem;
+    text-align: left !important;
+    color: red;
+
 }
 nav a
 {
