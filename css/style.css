@@ -40,5 +40,5 @@ nav a
 i:hover
 {
     cursor: pointer;
-    background-color: yellow;
+    color: red;
 }
