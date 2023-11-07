@@ -16,5 +16,6 @@ footer
 }
 nav
 {
-    background-color: bisque;
+    background-color: rgb(200, 228, 250);
+    border-bottom: .15rem solid black;
 }

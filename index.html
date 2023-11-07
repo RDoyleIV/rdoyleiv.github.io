@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +13,43 @@
   <link rel="stylesheet" href="css/dark.css">
   <title>rdoyleiv Homepage</title>
 </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href=".">Homepage</a></li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>
-          <i class="fa-regular fa-moon" style="font-size: 2rem;" id="btnTheme" name="default"></i>
-        </li>
-      </ul>
-    </nav>
-    <header></header>
-    <section>
-        <h1>HI</h1>
-    </section>
+  <body class="d-flex flex-column h-100">
+    <main role="main" class="flex-shrink-0">
+      <div class="wrapper">
+        <nav name="topNav">
+          <ul>
+            <li><a href=".">Home</a></li>
+            <li>item 2</li>
+            <li>
+              <span name="aboutMe"><a href="#">About Me</a></span>
+            </li>
+            <li>
+              <i class="fa-regular fa-moon" style="font-size: 2rem;" id="btnTheme" name="default"></i>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Nav -->
+        <div name="sideBar" class="bg-secondary">
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 2</li>
+            <li>item 2</li>
+            <li>item 2</li>
+            <li>item 2</li>
+          </ul>
+        </div>
+        <!-- Grid section 2/5 -->
+        <section name="contentHere">
+            <h1>HI</h1>
+        </section>
+      </div>
+    </main>
+    <!-- footer outside of Grid -->
+    <footer class="footer border-top border-dark mt-auto py-3 bg-secondary">
+      <div class="container">
+          <h1 class="">...</h1>
+      </div>
+  </footer>
   </body>
 </html>
