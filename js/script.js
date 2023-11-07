@@ -26,3 +26,19 @@ else {
     document.querySelector('i#btnTheme').classList.add('text-light');
     document.querySelector('link[href="css/dark.css"]').setAttribute('href', 'css/light.css');
 }
+
+// Fetch api/function outline for future .json use.
+let contentDiv = document.getElementById('moreContent');
+contentDiv.addEventListener('load', async () => {
+    await fetch('js/test-data.json')
+    .then(response => response.json())
+    .then(thisData => dataList(thisData))
+    .catch(err => console.log(err))
+});
+
+//fetch function for stored data
+async function dataList(thisData) {
+    const dataJson = Object.values(thisData);
+
+    contentDiv.innerHTML += dataJson[0].hello;
+}
