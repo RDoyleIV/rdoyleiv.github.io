@@ -6,8 +6,6 @@ html body
 nav
 {
     text-align: center;
-    margin-bottom: 1rem;
-    padding-bottom: .001rem;
     grid-column: 1 /  5;
     grid-row: 1;
 }
@@ -32,7 +30,7 @@ nav > ul > li:last-child
     display: inline-block;
     position: absolute;
     right: .1rem;
-    top: .5rem;
+    top: .7rem;
     text-align: right !important;
     color: red;
 }
@@ -60,7 +58,7 @@ div#sideBar
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .1rem;
+/*     gap: .rem;*/    
     grid-auto-rows: minmax(1rem, auto);
 }
 section#contentHere

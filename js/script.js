@@ -29,7 +29,7 @@ else {
 
 // Fetch api/function outline for future .json use.
 let contentDiv = document.getElementById('moreContent');
-contentDiv.addEventListener('load', async () => {
+contentDiv.addEventListener('click', async () => {
     await fetch('js/test-data.json')
     .then(response => response.json())
     .then(thisData => dataList(thisData))
@@ -40,5 +40,6 @@ contentDiv.addEventListener('load', async () => {
 async function dataList(thisData) {
     const dataJson = Object.values(thisData);
 
+    console.log(dataJson[0]);
     contentDiv.innerHTML += dataJson[0].hello;
 }
