@@ -28,50 +28,28 @@ nav > ul > li:first-child
 nav > ul > li:last-child
 {
     display: inline-block;
+    font-size: 1.5rem;
     position: absolute;
     right: .1rem;
-    top: .7rem;
-    text-align: right !important;
-    color: red;
+    top: .4rem;
 }
-nav a
-{
-    text-decoration: none;
-}
-i:hover
+nav a{text-decoration: none;}
+
+[name="themeToggle"]
 {
     cursor: pointer;
-    color: red;
 }
 #aboutMe
 {
     display: inline-block;
     text-align: center;
 }
-div[name="sideBar"]
-{
-    grid-column: 1;
-    grid-row: 2 / 5;
-    background-color: red;
-    border-right: 3px solid purple;
-    border-bottom: 3px solid purple;
-    height: 70rem;
-    width: fit-content;
-    padding-right: 2rem;
-    position: sticky;
-}
 .wrapper
 {
     display: grid;
-    margin: 0 auto;
+    margin: auto;
     max-width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, .1fr);
 /*     gap: .rem;*/    
     grid-auto-rows: minmax(1rem, auto);
-}
-section#contentHere
-{
-    text-align: center;
-    grid-column: 2 / 5;
-    grid-row: 2;
 }
