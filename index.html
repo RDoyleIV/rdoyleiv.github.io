@@ -50,13 +50,25 @@
     <!-- footer outside of Grid -->
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <div class="d-flex flex-row" name="social">
-          <div><h5>Social List</h5></div>
-          <div class="align-self-center"><h5>Other Info</h5></div>
+        <div class="row" name="social">
+          <div class="col-6"><h5>Social List</h5></div>
+          <div class="col-6"><h5>Other Info</h5></div>
         </div>
-        <div class="flex-row"><a href="https://github.com/RDoyleIV" class="text-warning text-decoration-none"><i class="fa-brands fa-github fa-xl"></i> Github</a></div>
-        <div class="">Github</div>
-          <h5 class="">...</h5>
+        <div class="row">
+          <div class="col-6">
+            <ul name="socialText">
+              <li><a href="https://github.com/RDoyleIV" class="text-decoration-none">
+                <i class="fa-brands fa-github fa-xl"></i> <span name="socialText">Github</span>
+              </a></li>
+              <li><a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-twitch fa-xl"></i><span name="socialText"> Twitch</span>
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 class="">...</h5>
+          </div>
+        </div> 
       </div>
   </footer>
   </body>
