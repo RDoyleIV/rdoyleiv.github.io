@@ -1,7 +1,17 @@
 let allIcons = document.querySelectorAll('[name="themeToggle"]');
 for(allIcons2 of allIcons){allIcons2.addEventListener('click', changeTheme,true)}
 let themeCookie = new RegExp("theme-dark=true"); 
-
+let heart = document.getElementById('heart');
+heart.addEventListener('click', () => {
+    if(heart.classList.contains('fa-regular')) {
+        heart.classList.replace('fa-regular', 'fa-solid');
+        heart.classList.add('text-danger');
+    }
+    else {
+        heart.classList.replace('fa-solid', 'fa-regular');
+        heart.classList.remove('text-danger');
+    }
+})
 function changeTheme(event) {
     if (event) {
         if(document.querySelector('i#btnTheme2').classList.contains('text-light')) {

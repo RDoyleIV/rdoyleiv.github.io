@@ -2,6 +2,11 @@ html
 {
     background-color: transparent;
 }
+a
+{
+    text-decoration: none;
+    color: white;
+}
 .nav-active
 {
     color: rgb(255, 255, 255);

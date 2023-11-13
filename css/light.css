@@ -6,6 +6,11 @@ body
 {
     background-color: rgb(200, 228, 250);
 }
+a
+{
+    text-decoration: none;
+    color: black;
+}
 .nav-active
 {
     background-color: yellow;
@@ -33,10 +38,10 @@ div[name="sideBar"]
     grid-row: 2 / 4;
     background-color: rgb(190, 253, 222);
     border-right: .1rem solid black;
-    height: 70rem;
+    height: 73.2rem;
     width: fit-content;
     padding-right: 2rem;
-    position: sticky;
+    position: left;
 }
 
 section#contentHere

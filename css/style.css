@@ -53,3 +53,7 @@ nav a{text-decoration: none;}
 /*     gap: .rem;*/    
     grid-auto-rows: minmax(1rem, auto);
 }
+#heart
+{
+    cursor: pointer;
+}
